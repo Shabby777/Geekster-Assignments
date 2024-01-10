@@ -4,6 +4,7 @@
     flex-direction: column;
     
 }
+
 .marker{
     display: flex;
     width: 25%;
@@ -12,11 +13,15 @@
     
 
 }
+
 .marker div{
     padding: 1%;
     color: transparent;
     box-shadow: 0px 0px 30px black;
 }
+
+
+
 .d1_red{
     width: 25%;
     background-image: linear-gradient(rgba(255, 0, 0,1),rgba(255, 0, 0,0.5),rgba(255, 0, 0,1));
@@ -32,6 +37,8 @@
     width: 12.5;
     background-image: linear-gradient(rgba(255, 0, 0,1),rgba(255, 0, 0,0.5),rgba(255, 0, 0,1));
 }
+
+
 .d1_green{
     width: 25%;
     background-image: linear-gradient(rgb(60, 206, 2,1),rgb(72, 255, 0,0.5),rgb(72, 255, 0,1));
@@ -45,6 +52,8 @@
     width: 12.5;
     background-image: linear-gradient(rgb(60, 206, 2,1),rgb(72, 255, 0,0.5),rgb(72, 255, 0,1));
 }
+
+
 .d1_blue{
     width: 25%;
     background-image: linear-gradient(rgba(31, 4, 150,1),rgba(31, 4, 150,0.5),rgba(31, 4, 150,1));
