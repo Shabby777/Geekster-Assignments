@@ -20,6 +20,7 @@ body {
     cursor: pointer;
     display: flex;
     position: relative;
+    border: 2px solid white;
 }
 
 svg {
