@@ -1,4 +1,4 @@
-var divElement = document.getElementById("myDiv");
+var divElement = document.getElementById("helloDiv");
 
 divElement.style.color = "blue";           
 divElement.style.backgroundColor = "yellow"; 
