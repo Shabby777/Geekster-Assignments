@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #ff7d7d;
 }
 
 .container {
@@ -14,9 +14,10 @@ body {
 }
 
 .left-box, .right-box {
-    border: 1px solid #df1b1b;
+    /* border: 1px solid #df1b1b; */
     padding: 20px;
     margin: 10px;
+    background-color: floralwhite;
 }
 
 .product-item {

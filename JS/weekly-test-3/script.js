@@ -9,12 +9,15 @@ const rightBox = document.getElementById('rightBox');
 const cart = [];
 
 leftBox.style.border = "5px solid grey";
-leftBox.style.width = "200px";
-leftBox.style.padding = "20px";
+leftBox.style.width = "250px";
+// leftBox.style.padding = "20px";
 
-rightBox.style.margin = "20px";
+
+
+// rightBox.style.margin = "20px";
 rightBox.style.border = "5px solid grey";
-rightBox.style.width = "150px";
+rightBox.style.width = "300px";
+
 
 
 function renderProducts() {
@@ -25,8 +28,9 @@ function renderProducts() {
         productItem.innerHTML = `
             <span>${product.name}</span>
             <span>Price: ${product.price}</span>
-            <button onclick="addToCart(${product.id})">+</button>
-            <button onclick="removeFromCart(${product.id})">-</button>
+            <button onclick="addToCart(${product.id})" style="background-color: lightblue;">+</button>
+            <span>1</span>
+            <button onclick="removeFromCart(${product.id})" style="background-color: lightblue;">-</button>
         `;
         leftBox.appendChild(productItem);
     });
@@ -65,6 +69,7 @@ function addToCart(productId) {
     }
 
     renderCart();
+    renderProducts();
 }
 
 function removeFromCart(productId) {
@@ -78,6 +83,7 @@ function removeFromCart(productId) {
         }
 
         renderCart();
+        renderProducts();
     }
 }
 
