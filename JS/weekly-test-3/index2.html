@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 600px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .products-box, .cart-box {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-item, .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        .cart-total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const Products = [
+                {id: 1, name: 'Product-1', price: 100},
+                {id: 2, name: 'Product-2', price: 200},
+                {id: 3, name: 'Product-3', price: 300},
+            ];
+
+            const cart = {};
+
+            function updateCart() {
+                const cartBox = document.getElementById('cart-box');
+                cartBox.innerHTML = '';
+
+                let total = 0;
+
+                for (const productId in cart) {
+                    const product = Products.find(p => p.id === parseInt(productId));
+                    const quantity = cart[productId];
+                    const totalPrice = product.price * quantity;
+
+                    total += totalPrice;
+
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+                    cartItem.innerHTML = `
+                        <span>${product.name} - Quantity: ${quantity} - Price: ${totalPrice}</span>
+                        <span>
+                            <button onclick="addToCart(${product.id})">+</button>
+                            ${quantity}
+                            <button onclick="removeFromCart(${product.id})">-</button>
+                        </span>
+                    `;
+                    cartBox.appendChild(cartItem);
+                }
+
+                const cartTotal = document.createElement('div');
+                cartTotal.classList.add('cart-total');
+                cartTotal.textContent = `Total: ${total}`;
+                cartBox.appendChild(cartTotal);
+
+                if (Object.keys(cart).length === 0) {
+                    const noProductMsg = document.createElement('div');
+                    noProductMsg.textContent = 'No Product added to the cart';
+                    cartBox.appendChild(noProductMsg);
+                }
+            }
+
+            function addToCart(productId) {
+                if (!cart[productId]) {
+                    cart[productId] = 1;
+                } else {
+                    cart[productId]++;
+                }
+                updateCart();
+            }
+
+            function removeFromCart(productId) {
+                if (cart[productId]) {
+                    cart[productId]--;
+                    if (cart[productId] === 0) {
+                        delete cart[productId];
+                    }
+                    updateCart();
+                }
+            }
+
+            function createProductItem(product) {
+                const productItem = document.createElement('div');
+                productItem.classList.add('product-item');
+                productItem.innerHTML = `
+                    <span>${product.name} - Price: ${product.price}</span>
+                    <span>
+                        <button onclick="addToCart(${product.id})">+</button>
+                        <span id="quantity-${product.id}">0</span>
+                        <button onclick="removeFromCart(${product.id})">-</button>
+                    </span>
+                `;
+                return productItem;
+            }
+
+            const productsBox = document.getElementById('products-box');
+            Products.forEach(product => {
+                productsBox.appendChild(createProductItem(product));
+            });
+
+            updateCart();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="products-box" id="products-box">
+            <!-- Product items will be added here dynamically -->
+        </div>
+        <div class="cart-box" id="cart-box">
+            <!-- Cart items and total will be added here dynamically -->
+        </div>
+    </div>
+</body>
+</html>

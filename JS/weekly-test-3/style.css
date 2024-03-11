@@ -31,3 +31,7 @@ body {
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
+button {
+    cursor: pointer;
+}

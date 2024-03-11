@@ -29,7 +29,7 @@ function renderProducts() {
             <span>${product.name}</span>
             <span>Price: ${product.price}</span>
             <button onclick="addToCart(${product.id})" style="background-color: lightblue;">+</button>
-            <span>1</span>
+            <span id="quantity-${product.id}">0</span>
             <button onclick="removeFromCart(${product.id})" style="background-color: lightblue;">-</button>
         `;
         leftBox.appendChild(productItem);
