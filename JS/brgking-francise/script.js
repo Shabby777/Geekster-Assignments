@@ -46,7 +46,7 @@ document.getElementById('orderButton').addEventListener('click', function(){
 
         switch(foodToShow){
             case 'Burger':
-                foodImage.src= 'https://burgerking.com.my/upload/image/Product/67/Mushroom%20Veggie%20Ala%20Carte.png'
+                foodImage.src= ''
                 break;
             case 'Fries':
                 foodImage.src = 'https://burgerking.com.my/upload/image/Product/18/French%20Fries.png'
