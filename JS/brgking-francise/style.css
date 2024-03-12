@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #ff6600;
+}
+
+#foodImage {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    display: none;
+}
+
+#orderId {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: rgb(255, 255, 110);
+    display: none;
+}
+
+#color {
+    background-color: yellow;
+    padding: 30px;
+}
+
+#orderButton {
+    margin: 0 0 20px 100px;
+    background-color: rgb(179, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid yellowgreen;
+    cursor: pointer;
+    font: bold;
+}
+
+/* #orderButton:focus {
+    margin: 20px 0 20px 100px;
+} */
+
+#foodItems {
+    padding-left: 40px;
+}
