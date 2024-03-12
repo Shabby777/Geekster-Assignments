@@ -46,7 +46,7 @@ document.getElementById('orderButton').addEventListener('click', function(){
 
         switch(foodToShow){
             case 'Burger':
-                foodImage.src= ''
+                foodImage.src= 'https://shabby777.github.io/Geekster-Assignments/JS/brgking-francise/imgs/Mushroom-Veggie-Ala-Carte.png'
                 break;
             case 'Fries':
                 foodImage.src = 'https://burgerking.com.my/upload/image/Product/18/French%20Fries.png'
