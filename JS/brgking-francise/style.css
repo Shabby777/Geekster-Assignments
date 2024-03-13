@@ -22,13 +22,17 @@ body {
     display: none;
 }
 
-#color {
+#color:not(#foodImage) {
     background-color: yellow;
     padding: 30px;
+    border-radius: 10px;
+    /* display: flex;
+    justify-content: center; */
+    /* width: 500px; */
 }
 
 #orderButton {
-    margin: 0 0 20px 100px;
+    margin: 0 0 20px 50px;
     background-color: rgb(179, 0, 0);
     color: white;
     padding: 10px;
@@ -43,5 +47,5 @@ body {
 } */
 
 #foodItems {
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
