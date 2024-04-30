@@ -2,7 +2,7 @@ const Title = () => {
   return <h1>Learn Web Development</h1>;
 };
 
-const MyPara = (props) => {
+const MyPara = () => {
   return (
     <div>
     <p>
@@ -20,7 +20,7 @@ const MyPara = (props) => {
 
 const MainContainer = () => {
 
-  const paras = ["pa1", ]
+  const paras = ["para1", ]
 
   return (
     <div
