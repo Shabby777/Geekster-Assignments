@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.ResturantSection1{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+#search{
+    height: 2.5rem;
+    width: 15rem;
+    border: 1px solid #E5E7EB;
+    padding: 0 0 0 0.5rem;
+    color: #E5E7EB;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+
+}
+.ratingvise{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#rating{
+    width: 4rem;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid #E5E7EB;
+    color: #E5E7EB;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 4rem; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media screen and (max-width:426px) {
+    .section1{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
