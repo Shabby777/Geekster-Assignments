@@ -1,0 +1,25 @@
+/* color:rgba(159, 12, 35, 0.88); */
+
+.header-container{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header-container > #header-title{
+    color:rgba(159, 12, 35, 0.88);
+}
+
+.header-container #header-para{
+    text-transform: uppercase;
+   
+}
+
+.header-container #header-menu{
+    list-style: none;
+    background-color: gray;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem 3rem;
+   
+}
