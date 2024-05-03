@@ -26,29 +26,29 @@ function Footer(props) {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.</p>
             </div>
             <div className="footerNav">
-                <a href="#">About</a>
-                <a href="#">Careers</a>
-                <a href="#">History</a>
-                <a href="#">Services</a>
-                <a href="#">
+                <a>About</a>
+                <a>Careers</a>
+                <a>History</a>
+                <a>Services</a>
+                <a>
                     Projects
                 </a>
-                <a href="#">Blog</a>
+                <a>Blog</a>
             </div>
             <div className="footerIcons">
-                <a href="#">
+                <a>
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#">
+                <a>
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a>
                     <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a>
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="#">
+                <a>
                     <i class="fa-solid fa-basketball"></i>
                 </a>
             </div>

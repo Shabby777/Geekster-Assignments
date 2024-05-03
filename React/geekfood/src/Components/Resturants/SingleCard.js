@@ -39,7 +39,7 @@ function SingleCard(props) {
           <i class="fa-solid fa-utensils"></i>
           <p>{props.cuisine}</p>
         </div>
-        <a href="#" className="externalLink">Visit menu</a>
+        <a href="https://example.com/" className="externalLink">Visit menu</a>
       </div>
     </div>
   );
