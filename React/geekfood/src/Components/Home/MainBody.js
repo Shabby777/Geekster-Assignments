@@ -8,8 +8,8 @@ function MainBody(props) {
                     <h1 className='sec1Contentline1'>Let us find your <br /><span className='forever'>Forever Food.</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus numquam ea!</p>
                     <div className="sec1Btns">
-                        <a><button className='searchNow'>Search Now</button></a>
-                        <a><button className='knowMore'>Know More</button></a>
+                        <a href="https://example.com/"><button className='searchNow'>Search Now</button></a>
+                        <a href="https://example.com/"><button className='knowMore'>Know More</button></a>
                     </div>
                 </div>
             </div>
