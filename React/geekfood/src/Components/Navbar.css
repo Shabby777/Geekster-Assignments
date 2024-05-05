@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding:1rem 0;
+    /* background-color: #111827; */
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the navbar span the entire width of the viewport */
+  background-color: #fff; /* Adjust as per your design */
+  z-index: 1000; /* Ensure it's above other elements */
+  border:1px solid gray;
+    
+}
+
+.nav-logo{
+    gap:1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.nav-links{
+    display: flex;
+    gap:2rem;
+    font-weight: 500;
+    
+}
+
+.verticle-center{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links div span a{
+    text-decoration: none;
+    
+    
+  }
+
+  .nav-links div span a:hover{
+    color: blue;
+  }

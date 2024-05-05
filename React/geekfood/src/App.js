@@ -1,29 +1,23 @@
-import './App.css';
-import Header from './Components/Essentials/Header';
-import Home from "./Components/Home/Home";
-import Resturant from './Components/Resturants/Resturant';
-import Foods from './Components/Foods/Foods';
-import Quote from './Components/Quote/Quote';
-import Contacts from './Components/Contacts/Contacts';
-import Footer from './Components/Essentials/Footer';
-import { Route,Routes } from 'react-router-dom';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingScreen from './Screen/LandingScreen';
+import QuoteScreen from './Screen/QuoteScreen';
+import FoodScreen from './Screen/FoodScreen';
+import Navbar from "./Components/Navbar";
+import RestaurantScreen from './Screen/RestaurantScreen';
 
 function App() {
-  document.title="GeeksFood"
   return (
-    <div className="App">
-      <Header />
+    <Router>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="/resturants" element={<Resturant />}></Route>
-        <Route path="/foods" element={<Foods />}></Route>
-        <Route path="/quote" element={<Quote />}></Route>
-        <Route path="/contact" element={<Contacts />}></Route>
-      </Routes> 
-      
-      <Footer />
-    </div>
+        <Route path="/" element={<LandingScreen />} />
+        <Route path="/quote" element={<QuoteScreen />} />
+        {/* <Route path="/restaurant" element={<RestaurantScreen />} /> */}
+        <Route path="/foods" element={<FoodScreen />} />
+      </Routes>
+    </Router>
   );
 }
 

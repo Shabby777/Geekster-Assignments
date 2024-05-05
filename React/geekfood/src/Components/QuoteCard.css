@@ -1,0 +1,17 @@
+.quotecard-container{
+    background-color: black;
+    color:white;
+    margin-top: 5rem;
+    text-align: center;
+   padding:2rem;
+   border-radius: 1rem;
+}
+
+.quotecard-container > span{
+    color: #9CA3EF;
+}
+
+.quotecard-container >p{
+    font-size: 30px;
+    font-weight: 500;
+}

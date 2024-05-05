@@ -1,0 +1,533 @@
+[
+    {
+      "name": "Tasty Bites",
+      "location": {
+        "city": "New York",
+        "pin": "10001"
+      },
+      "type": "Italian",
+      "address": "123 Main Street",
+      "rating": 4.2
+    },
+    {
+      "name": "Spice Garden",
+      "location": {
+        "city": "Los Angeles",
+        "pin": "90001"
+      },
+      "type": "Indian",
+      "address": "456 Elm Street",
+      "rating": 4.5
+    },
+    {
+      "name": "Sizzling Steaks",
+      "location": {
+        "city": "Chicago",
+        "pin": "60601"
+      },
+      "type": "Steakhouse",
+      "address": "789 Oak Avenue",
+      "rating": 4.0
+    },
+    {
+      "name": "Ocean Delight",
+      "location": {
+        "city": "Miami",
+        "pin": "33101"
+      },
+      "type": "Seafood",
+      "address": "321 Beach Boulevard",
+      "rating": 4.7
+    },
+    {
+      "name": "Green Garden",
+      "location": {
+        "city": "San Francisco",
+        "pin": "94101"
+      },
+      "type": "Vegetarian",
+      "address": "567 Garden Lane",
+      "rating": 4.3
+    },
+    {
+      "name": "Mamma Mia Pizzeria",
+      "location": {
+        "city": "Boston",
+        "pin": "02101"
+      },
+      "type": "Pizza",
+      "address": "890 Pepperoni Plaza",
+      "rating": 4.6
+    },
+    {
+      "name": "Flaming Grill",
+      "location": {
+        "city": "Houston",
+        "pin": "77001"
+      },
+      "type": "Barbecue",
+      "address": "234 Flame Street",
+      "rating": 4.1
+    },
+    {
+      "name": "Tokyo Sushi Bar",
+      "location": {
+        "city": "Tokyo",
+        "pin": "100-0001"
+      },
+      "type": "Japanese",
+      "address": "1-2-3 Sushi Street",
+      "rating": 4.8
+    },
+    {
+      "name": "Parisian Cafe",
+      "location": {
+        "city": "Paris",
+        "pin": "75001"
+      },
+      "type": "French",
+      "address": "4 Rue Croissant",
+      "rating": 4.4
+    },
+    {
+      "name": "Berlin Bistro",
+      "location": {
+        "city": "Berlin",
+        "pin": "10115"
+      },
+      "type": "German",
+      "address": "5 Bratwurst Lane",
+      "rating": 4.2
+    },
+    {
+      "name": "Seoul Spice",
+      "location": {
+        "city": "Seoul",
+        "pin": "04501"
+      },
+      "type": "Korean",
+      "address": "6 Kimchi Road",
+      "rating": 4.5
+    },
+    {
+      "name": "Amsterdam Eats",
+      "location": {
+        "city": "Amsterdam",
+        "pin": "1012"
+      },
+      "type": "Dutch",
+      "address": "7 Windmill Way",
+      "rating": 4.3
+    },
+    {
+      "name": "Sydney Sizzle",
+      "location": {
+        "city": "Sydney",
+        "pin": "2000"
+      },
+      "type": "Australian",
+      "address": "8 Barbecue Boulevard",
+      "rating": 4.7
+    },
+    {
+      "name": "Rome Ristorante",
+      "location": {
+        "city": "Rome",
+        "pin": "00184"
+      },
+      "type": "Italian",
+      "address": "9 Via Pasta",
+      "rating": 4.6
+    },
+    {
+      "name": "Bangkok Bites",
+      "location": {
+        "city": "Bangkok",
+        "pin": "10100"
+      },
+      "type": "Thai",
+      "address": "10 Pad Thai Place",
+      "rating": 4.4
+    },
+    {
+      "name": "Dubai Diner",
+      "location": {
+        "city": "Dubai",
+        "pin": "12345"
+      },
+      "type": "Middle Eastern",
+      "address": "11 Shawarma Street",
+      "rating": 4.2
+    },
+    {
+      "name": "Moscow Munchies",
+      "location": {
+        "city": "Moscow",
+        "pin": "101000"
+      },
+      "type": "Russian",
+      "address": "12 Red Square",
+      "rating": 4.0
+    },
+    {
+      "name": "Copenhagen Cafe",
+      "location": {
+        "city": "Copenhagen",
+        "pin": "1050"
+      },
+      "type": "Danish",
+      "address": "13 Hans Christian Andersen Street",
+      "rating": 4.3
+    },
+    {
+      "name": "Buenos Aires Grill",
+      "location": {
+        "city": "Buenos Aires",
+        "pin": "C1011"
+      },
+      "type": "Argentinian",
+      "address": "14 Asado Avenue",
+      "rating": 4.7
+    },
+    {
+      "name": "Toronto Tacos",
+      "location": {
+        "city": "Toronto",
+        "pin": "M5V 1H2"
+      },
+      "type": "Mexican",
+      "address": "15 Taco Terrace",
+      "rating": 4.5
+    },
+    {
+      "name": "Auckland Eats",
+      "location": {
+        "city": "Auckland",
+        "pin": "1010"
+      },
+      "type": "New Zealand",
+      "address": "16 Kiwi Court",
+      "rating": 4.6
+    },
+      {
+        "name": "Madrid Tapas",
+        "location": {
+          "city": "Madrid",
+          "pin": "28001"
+        },
+        "type": "Spanish",
+        "address": "17 Tapas Lane",
+        "rating": 4.4
+      },
+      {
+        "name": "Lima Llama",
+        "location": {
+          "city": "Lima",
+          "pin": "L18"
+        },
+        "type": "Peruvian",
+        "address": "18 Llama Street",
+        "rating": 4.6
+      },
+      {
+        "name": "Mumbai Masala",
+        "location": {
+          "city": "Mumbai",
+          "pin": "400001"
+        },
+        "type": "Indian",
+        "address": "19 Masala Market",
+        "rating": 4.3
+      },
+      {
+        "name": "Dublin Diner",
+        "location": {
+          "city": "Dublin",
+          "pin": "D01"
+        },
+        "type": "Irish",
+        "address": "20 Clover Street",
+        "rating": 4.5
+      },
+      {
+        "name": "Vienna Vineyard",
+        "location": {
+          "city": "Vienna",
+          "pin": "1010"
+        },
+        "type": "Austrian",
+        "address": "21 Vineyard Avenue",
+        "rating": 4.2
+      },
+      {
+        "name": "Singapore Sizzle",
+        "location": {
+          "city": "Singapore",
+          "pin": "179103"
+        },
+        "type": "Singaporean",
+        "address": "22 Satay Street",
+        "rating": 4.7
+      },
+      {
+        "name": "Stockholm Sweets",
+        "location": {
+          "city": "Stockholm",
+          "pin": "111 30"
+        },
+        "type": "Swedish",
+        "address": "23 Sweet Street",
+        "rating": 4.4
+      },
+      {
+        "name": "Budapest Bistro",
+        "location": {
+          "city": "Budapest",
+          "pin": "1052"
+        },
+        "type": "Hungarian",
+        "address": "24 Goulash Lane",
+        "rating": 4.3
+      },
+      {
+        "name": "Prague Pierogi",
+        "location": {
+          "city": "Prague",
+          "pin": "110 00"
+        },
+        "type": "Czech",
+        "address": "25 Pierogi Place",
+        "rating": 4.5
+      },
+      {
+        "name": "Hanoi Pho",
+        "location": {
+          "city": "Hanoi",
+          "pin": "100000"
+        },
+        "type": "Vietnamese",
+        "address": "26 Pho Street",
+        "rating": 4.6
+      },
+      {
+        "name": "São Paulo Steakhouse",
+        "location": {
+          "city": "São Paulo",
+          "pin": "01310-100"
+        },
+        "type": "Brazilian",
+        "address": "27 Churrasco Avenue",
+        "rating": 4.4
+      },
+      {
+        "name": "Jakarta Javanese",
+        "location": {
+          "city": "Jakarta",
+          "pin": "12190"
+        },
+        "type": "Indonesian",
+        "address": "28 Javanese Junction",
+        "rating": 4.3
+      },
+      {
+        "name": "Oslo Oysters",
+        "location": {
+          "city": "Oslo",
+          "pin": "0154"
+        },
+        "type": "Norwegian",
+        "address": "29 Oyster Street",
+        "rating": 4.5
+      },
+      {
+        "name": "Wellington Wharf",
+        "location": {
+          "city": "Wellington",
+          "pin": "6011"
+        },
+        "type": "New Zealand",
+        "address": "30 Wharf Way",
+        "rating": 4.6
+      },
+      {
+        "name": "Zurich Zest",
+        "location": {
+          "city": "Zurich",
+          "pin": "8001"
+        },
+        "type": "Swiss",
+        "address": "31 Fondue Lane",
+        "rating": 4.3
+      },
+      {
+        "name": "Athens Avenue",
+        "location": {
+          "city": "Athens",
+          "pin": "105 62"
+        },
+        "type": "Greek",
+        "address": "32 Gyro Street",
+        "rating": 4.5
+      },
+      {
+        "name": "Lisbon Lounge",
+        "location": {
+          "city": "Lisbon",
+          "pin": "1200-410"
+        },
+        "type": "Portuguese",
+        "address": "33 Lounge Lane",
+        "rating": 4.4
+      },
+      {
+        "name": "Kuala Lumpur Kitchen",
+        "location": {
+          "city": "Kuala Lumpur",
+          "pin": "50450"
+        },
+        "type": "Malaysian",
+        "address": "34 Kitchen Street",
+        "rating": 4.6
+      },
+      {
+        "name": "Cairo Cuisine",
+        "location": {
+          "city": "Cairo",
+          "pin": "11511"
+        },
+        "type": "Egyptian",
+        "address": "35 Falafel Lane",
+        "rating": 4.3
+      },
+      {
+        "name": "Cape Town Cafe",
+        "location": {
+          "city": "Cape Town",
+          "pin": "8001"
+        },
+        "type": "South African",
+        "address": "36 Cafe Street",
+        "rating": 4.5
+      },
+      {
+        "name": "Belfast Bites",
+        "location": {
+          "city": "Belfast",
+          "pin": "BT1"
+        },
+        "type": "Irish",
+        "address": "37 Shamrock Lane",
+        "rating": 4.4
+      },
+      {
+        "name": "Edinburgh Eats",
+        "location": {
+          "city": "Edinburgh",
+          "pin": "EH1"
+        },
+        "type": "Scottish",
+        "address": "38 Haggis Road",
+        "rating": 4.5
+      },
+      {
+        "name": "Montreal Maple",
+        "location": {
+          "city": "Montreal",
+          "pin": "H2Y 1H2"
+        },
+        "type": "Canadian",
+        "address": "39 Maple Lane",
+        "rating": 4.3
+      },
+      {
+        "name": "Manila Munchies",
+        "location": {
+          "city": "Manila",
+          "pin": "1000"
+        },
+        "type": "Filipino",
+        "address": "40 Adobo Avenue",
+        "rating": 4.6
+      },
+      {
+        "name": "Mexico City Cantina",
+        "location": {
+          "city": "Mexico City",
+          "pin": "06600"
+        },
+        "type": "Mexican",
+        "address": "41 Cantina Street",
+        "rating": 4.4
+      },
+      {
+        "name": "Brisbane BBQ",
+        "location": {
+          "city": "Brisbane",
+          "pin": "4000"
+        },
+        "type": "Australian",
+        "address": "42 BBQ Boulevard",
+        "rating": 4.5
+      },
+      {
+        "name": "Reykjavik Ramen",
+        "location": {
+          "city": "Reykjavik",
+          "pin": "101"
+        },
+        "type": "Icelandic",
+        "address": "43 Ramen Road",
+        "rating": 4.3
+      },
+      {
+        "name": "Santiago Sushi",
+        "location": {
+          "city": "Santiago",
+          "pin": "7500013"
+        },
+        "type": "Chilean",
+        "address": "44 Sushi Street",
+        "rating": 4.6
+      },
+      {
+        "name": "Bogota Bistro",
+        "location": {
+          "city": "Bogota",
+          "pin": "110311"
+        },
+        "type": "Colombian",
+        "address": "45 Bistro Boulevard",
+        "rating": 4.4
+      },
+      {
+        "name": "Brussels Brasserie",
+        "location": {
+          "city": "Brussels",
+          "pin": "1000"
+        },
+        "type": "Belgian",
+        "address": "46 Brasserie Lane",
+        "rating": 4.5
+      },
+      {
+        "name": "Nairobi Noodles",
+        "location": {
+          "city": "Nairobi",
+          "pin": "00100"
+        },
+        "type": "Kenyan",
+        "address": "47 Noodles Street",
+        "rating": 4.3
+      },
+      {
+        "name": "Helsinki Hamburger",
+        "location": {
+          "city": "Helsinki",
+          "pin": "00100"
+        },
+        "type": "Finnish",
+        "address": "48 Hamburger Avenue",
+        "rating": 4.6
+      }
+    ]
+    

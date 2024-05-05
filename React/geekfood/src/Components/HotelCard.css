@@ -1,0 +1,23 @@
+.menu-body{
+    padding:30px;
+    
+}
+
+.menu-container{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width:400px;
+   text-align:center;
+   border-radius: 10px;
+   padding:10px 0;
+    
+}
+
+.footer{
+    background-color: #F3F4F6;
+    padding:5px;
+    
+}
+
+.footer h4{
+    color:hsl(135, 73%, 30%);
+}
