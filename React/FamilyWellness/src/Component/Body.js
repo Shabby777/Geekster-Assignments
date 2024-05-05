@@ -8,7 +8,7 @@ const Body = () => {
     <>
     <section id="body-container">
     <div id="body-section-one">
-    <img src={photo} alt="image" />
+    <img src={photo} />
     <div id="body-content1">
     <h1>Think Health. Think Massage</h1>
     <p>We are open 9am to 6pm; Monday through Sunday. If you would like to scedule an appointment with us, please call us at 987-654-3210 today!</p>
