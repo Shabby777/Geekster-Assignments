@@ -5,10 +5,9 @@ async function scrapeIPLData() {
   const page = await browser.newPage();
   await page.goto('https://www.iplt20.com/stats/');
 
-  // Wait for the necessary selector to load
   await page.waitForSelector('.np-stats-table');
 
-  // Scrape data from the first page
+  // Scraping data from the first page
   const data = await page.evaluate(() => {
     const rows = document.querySelectorAll('.np-stats-table tbody tr');
     const stats = [];
@@ -33,11 +32,11 @@ async function scrapeIPLData() {
 
   console.log(data);
 
-  // Handle pagination if necessary (this is a basic example, adjust as needed)
+
   const nextButton = await page.$('.pagination__next');
   if (nextButton) {
     await nextButton.click();
-    await page.waitForTimeout(3000); // Adjust the timeout as needed
+    await page.waitForTimeout(3000);
     const moreData = await page.evaluate(() => {
       const rows = document.querySelectorAll('.np-stats-table tbody tr');
       const stats = [];
