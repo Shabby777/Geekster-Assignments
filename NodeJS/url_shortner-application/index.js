@@ -1,60 +1,103 @@
-import fs from "fs";
-import { fileURLToPath } from "url";
-import path from "path";
-
-import express from "express";
+ import express from "express";
 import { nanoid } from "nanoid";
-
-const isUrlValid = (url) => {
-  try {
-    new URL(url);
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-
-const app = express();
-
-app.use(express.json());
+import bodyParser from "body-parser";
+import  path from 'path';
+import { fileURLToPath } from "url";
+// const path = require('path');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/urlform.html");
+
+/* 
+const app = express();
+
+
+
+app.use(express.json());
+
+// app.get("/url-shortner", (req, res) => {
+//    res.send('Hello, World!');
+// })
+
+ app.post("/url-shortner", (req, res) =>{
+    const longurl = req.body.url;
+    const shorturl = nanoid(10);
+
+    res.json({
+        success : true,
+        url : `http://localhost:5000/${shorturl}`
+    })
 });
 
-app.post("/shorten", (req, res) => {
-  const isValidUrl = isUrlValid(req.body.longUrl);
-  if (!isValidUrl) {
-    return res.status(400).json({
-      success: false,
-      message: "Please provide a valid longUrl",
-    });
+app.listen(5000, () => {
+    console.log("server is up and running on port 5000")
+})
+
+
+*/
+
+
+// const express = require('express');
+// const bodyParser = require('body-parser');
+// const { nanoid } = require('nanoid');
+
+
+const app = express();
+const PORT = 5000 || process.env.PORT;
+
+// In-memory database to store URL mappings
+const urlDatabase = {};
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Serve HTML form for URL shortening
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+
+// Handle URL shortening
+app.post('/shorten', (req, res) => {
+  const longUrl = req.body.longUrl;
+
+  if (!isValidUrl(longUrl)) {
+    return res.status(400).send('Invalid URL');
   }
-  const shortUrl = nanoid(5);
-  const urlsFromFile = fs.readFileSync("urls.json", { encoding: "utf-8" });
-  const urlsJson = JSON.parse(urlsFromFile);
 
-  urlsJson[shortUrl] = req.body.longUrl;
+  const shortUrl = generateShortUrl();
+  urlDatabase[shortUrl] = longUrl;
 
-  fs.writeFileSync("urls.json", JSON.stringify(urlsJson));
-  res.json({
-    success: true,
-    data: `https://localhost:10000/${shortUrl}`,
-  });
+  res.send(`Shortened URL: http://localhost:${PORT}/${shortUrl}`);
 });
 
-app.get("/:shortUrl", (req, res) => {
-  const { shortUrl } = req.params;
-  const urls = fs.readFileSync("urls.json", { encoding: "utf-8" });
-  const urlsJson = JSON.parse(urls);
-  const longUrl = urlsJson[shortUrl];
-  if (!longUrl) {
-    return res.end("Invalid Short Url");
+// Redirect to the original URL when a short URL is accessed
+app.get('/:shortUrl', (req, res) => {
+  const shortUrl = req.params.shortUrl;
+  const longUrl = urlDatabase[shortUrl];
+
+  if (longUrl) {
+    res.redirect(longUrl);
+  } else {
+    res.status(404).send('URL not found');
   }
-  res.redirect(longUrl);
 });
 
-app.listen(10_000, () => console.log(`Server is up and running at port 10000`));
+// Start the server
+app.listen(PORT , () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+// Helper function to generate a short URL
+function generateShortUrl() {
+  return nanoid(8); // Adjust the length of the generated ID as needed
+}
+
+// Helper function to check if a URL is valid
+function isValidUrl(url) {
+  try {
+    new URL(url);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
