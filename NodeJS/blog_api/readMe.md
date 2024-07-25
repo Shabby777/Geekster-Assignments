@@ -1,3 +1,6 @@
+# Blogging Website
+
+RESTful API for a blog application. The API will handle user authentication, CRUD operations for posts, and CRUD operations for comments.
 ### Technologies Used :
 
 Some of the technologies used in the development of this web application are as follow:
